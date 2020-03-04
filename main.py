@@ -11,7 +11,7 @@ ALLOWED_EXTENSIONS = set(['pdf'])
 def allowed_file(filename):
 	return '.' in filename and filename.rsplit('.', 1)[1].lower() in ALLOWED_EXTENSIONS
 
-@app.route('/', methods=['POST'])
+@app.route('/intelligent-doc-automation/trade-finance/api/v1/document', methods=['POST'])
 def upload_file():
 	# check if the post request has the file part
 	if 'file' not in request.files:

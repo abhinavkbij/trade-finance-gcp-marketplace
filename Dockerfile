@@ -1,4 +1,4 @@
-FROM ubuntu:18.04
+FROM debian:9
 RUN apt-get update \
     && apt-get install default-jdk -y\
     && apt-get install tesseract-ocr -y \
